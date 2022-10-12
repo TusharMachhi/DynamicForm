@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+
+
+
+
+        }
+
+        body {
+            background: url("as\ \(4\).png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+
+
+
+        .btn1 {
+            display: inline-block;
+            position: relative;
+
+            width: 145px;
+            height: 35px;
+            color: white;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            border: 0;
+            border-radius: 20px;
+            outline: 0;
+            letter-spacing: 3px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+        }
+
+        .cont {
+
+
+
+
+            width: 400px;
+            height: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+
+            border-radius: 10px;
+            z-index: 1000;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+
+            transition: 0.3s;
+
+
+        }
+
+        .cont .active {
+            top: 50%;
+        }
+
+
+        .btn1:hover {
+            letter-spacing: 4px;
+            width: 158px;
+            height: 39px;
+
+        }
+
+        .cl {
+            margin-top: -60px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 8px;
+            align-items: center;
+            color: white;
+
+        }
+
+        .input {
+            margin: 10px auto;
+            width: 80%;
+            background-color: white;
+
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 0 15px;
+            outline: 0;
+            border: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+
+
+
+
+
+        .btn2 {
+            display: inline-block;
+            position: relative;
+
+            width: 140px;
+            height: 35px;
+            color: white;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            border: 0;
+            border-radius: 20px;
+            outline: 0;
+            letter-spacing: 3px;
+            transition: all 0.3s ease-in-out;
+            border: 2px solid white;
+            cursor: pointer;
+
+        }
+
+        .btn2:hover {
+            letter-spacing: 4px;
+            width: 158px;
+            height: 36px;
+            border: 2px solid white;
+            cursor: pointer;
+
+        }
+
+
+        .soci i {
+
+            padding: 10px;
+            color: white;
+
+            text-align: center;
+            cursor: pointer;
+            font-size: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h6 {
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .soci i:hover {
+            transform: translateY(-10px);
+
+        }
+
+        .cls {
+            cursor: pointer;
+        }
+
+        .r {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+        }
+
+        h5 {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .bt {
+            display: block;
+            margin: 30px auto;
+            width: 100px;
+            height: 35px;
+            border: 0;
+            border-radius: 20px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border: 2px solid white;
+            outline: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .bt1 {
+
+            margin: 30px auto;
+            width: 100px;
+            height: 35px;
+            border: 0;
+            border-radius: 20px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border: 2px solid white;
+            outline: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .bt1:hover {
+            box-shadow: unset;
+
+        }
+
+
+        .epp {
+            color: yellow;
+            margin: -20px 0px;
+            font-size: 12px;
+            margin-left: -200px;
+        }
+
+        .op {
+
+            margin: 30px;
+        }
+
+        .selc {
+
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+            outline: 0px;
+            padding-left: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h4 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80%;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .siz {
+            width: 14px;
+            height: 14px;
+            outline: 0;
+            border: 0;
+        }
+
+        .adder {
+
+            width: 200px;
+            height: 25px;
+            border-radius: 30px;
+            border: 1px solid grey;
+            outline: 0;
+            padding-left: 10px;
+        }
+
+        .tushar {
+            color: white;
+            border: 2px solid white;
+
+            width: 60px;
+            height: 30px;
+
+            border-radius: 30px;
+            outline: 0;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            overflow: hidden;
+        }
+
+
+        small {
+            margin-left: 10px;
+            display: inline;
+            color: white;
+
+
+        }
+
+        .nsty {
+            margin-left: 30px;
+            display: block;
+            text-align: start;
+            color: white;
+
+        }
+
+        .nsty1 {
+            margin-left: 30px;
+            display: block;
+            text-align: start;
+            color: white;
+
+        }
+
+        .checkb {
+            display: inline-block;
+        }
+
+        .selctop {
+
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+            outline: 0px;
+            padding-left: 10px;
+            text-align: center;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .data {
+            width: 400px;
+            height: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            margin: 60px auto;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(189, 4, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border-radius: 10px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="wrap">
+            <div class="opt">
+                <select id="val" class="selc">
+                    <option>select option</option>
+                    <option>input</option>
+                    <option>button</option>
+                    <option>number</option>
+                    <option>radio</option>
+                    <option>checkbox</option>
+                    <option>email</option>
+                    <option>select</option>
+
+                </select>
+            </div>
+
+
+
+            <button value="add" onclick="sel()" class="bt1">ADD</button>
+
+            <div class="add" id="ladder">
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="cont" class="cont">
+            <p>Dynamic Form</p>
+
+            <div class="in" id="ad">
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="data" id="data">
+    <p id="dat"></p>
+    </div>
+
+
+
+    <script>
+        // function lab(){
+        //         var labelinput =document.getElementById("mylabelinput").value;
+        //         var linp =document.getElementById("mylabelinput");
+
+        //        console.log(labelinput);
+        // }
+        var ids = 0;
+        var idd = 0;
+
+        function labfun() {
+
+            var lbid = document.getElementById("lab" + ids);
+            var lbn = document.getElementById("ibn" + ids);
+            var btnadd = document.getElementById("bt" + ids);
+            lbid.innerHTML = lbn.value;
+            lbn.style.display = "none";
+            btnadd.style.display = "none";
+        }
+        function labfun1() {
+            var btnad = document.getElementById("bt" + ids);
+            var emailid = document.getElementById("email" + ids);
+            var emaillab = document.getElementById("emailab" + ids);
+
+
+            emaillab.innerHTML = emailid.value;
+            emailid.style.display = "none";
+            btnad.style.display = "none";
+
+
+
+
+        }
+
+        function labfun2() {
+
+            var numbt = document.getElementById("bt" + ids);
+            var numinp = document.getElementById("num" + ids);
+            var numlab = document.getElementById("numlab" + ids);
+
+
+            numlab.innerHTML = numinp.value;
+            numinp.style.display = "none";
+            numbt.style.display = "none";
+
+
+
+        }
+
+
+        function labfun3() {
+
+            var checkbt = document.getElementById("bt" + ids);
+            var checkinp = document.getElementById("checkin" + ids);
+            var checklab = document.getElementById("checklab" + ids);
+
+
+            checklab.innerHTML = checkinp.value;
+
+            checkinp.style.display = "none";
+            checkbt.style.display = "none";
+
+
+
+
+            var checkl = document.createElement("input");
+            checkl.setAttribute("class", "adder");
+            checkl.setAttribute("id", "checkl" + ids);
+            document.getElementById('ad').appendChild(checkl);
+
+
+            var cbt = document.createElement("input");
+
+            cbt.setAttribute("type", "button");
+
+            cbt.setAttribute("value", "Add");
+            cbt.setAttribute("class", "tushar");
+            cbt.setAttribute("onclick", "myfun5()");
+            cbt.setAttribute("id", "cbt" + ids);
+            document.getElementById('ad').appendChild(cbt);
+        }
+
+
+        function myfun5() {
+            var chec = document.getElementById("checkl" + ids);
+            var checkinp = document.getElementById("checkin" + ids);
+            var brr = document.createElement("br");
+            document.getElementById('ad').appendChild(brr);
+            var cbx = document.createElement("input");
+
+            cbx.setAttribute("type", "checkbox");
+            cbx.name = checkinp.value;
+            cbx.value = chec.value;
+
+            cbx.setAttribute("class", "checkb");
+            cbx.setAttribute("id", "cbx");
+            document.getElementById('ad').appendChild(cbx);
+
+            var clab = document.getElementById("checkid");
+            var cinput = document.getElementById("checkl" + ids);
+
+            var small = document.createElement("small");
+            small.setAttribute("class", "small");
+            small.setAttribute("id", "checkid");
+
+            small.innerHTML = chec.value;
+
+            document.getElementById("ad").appendChild(small);
+        }
+
+        function labfun4() {
+
+            var checkbt1 = document.getElementById("bt" + ids);
+            var checkinp1 = document.getElementById("checkin1" + ids);
+            var checklab1 = document.getElementById("checklab1" + ids);
+
+
+            checklab1.innerHTML = checkinp1.value;
+            checkinp1.style.display = "none";
+            checkbt1.style.display = "none";
+
+
+
+        }
+
+        function labfun6() {
+            document.getElementById("cbt" + ids).style.display = "none";
+            document.getElementById("abt" + ids).style.display = "none";
+            document.getElementById("checkl" + ids).style.display = "none";
+
+
+
+        }
+
+
+
+        function radio() {
+
+            var checkbt = document.getElementById("bt" + ids);
+            var checkinp = document.getElementById("checkin" + ids);
+            var checklab = document.getElementById("checklab" + ids);
+
+
+            checklab.innerHTML = checkinp.value;
+            checkinp.style.display = "none";
+            checkbt.style.display = "none";
+
+
+
+
+            var checkl = document.createElement("input");
+            checkl.setAttribute("class", "adder");
+            checkl.setAttribute("id", "checkl" + ids);
+            document.getElementById('ad').appendChild(checkl);
+
+
+            ///////////////////////////
+            var cbt = document.createElement("input");
+
+            cbt.setAttribute("type", "button");
+
+            cbt.setAttribute("value", "Add");
+            cbt.setAttribute("class", "tushar");
+            cbt.setAttribute("onclick", "rad1()");
+            cbt.setAttribute("id", "cbt" + ids);
+            document.getElementById('ad').appendChild(cbt);
+
+
+
+
+
+
+
+        }
+
+
+        function rad1() {
+            var checkinp = document.getElementById("checkin" + ids);
+            var rad = document.getElementById("checkl" + ids);
+            var brr = document.createElement("br");
+            document.getElementById('ad').appendChild(brr);
+            var cbx = document.createElement("input");
+
+            cbx.setAttribute("type", "radio");
+            cbx.name = checkinp.value;
+            cbx.value = rad.value;
+            cbx.setAttribute("class", "radio");
+            cbx.setAttribute("id", "cbx");
+            document.getElementById('ad').appendChild(cbx);
+
+            var clab = document.getElementById("checkid");
+            var cinput = document.getElementById("checkl" + ids);
+
+            var small = document.createElement("small");
+            small.setAttribute("class", "small");
+            small.setAttribute("id", "checkid");
+            small.innerHTML = cinput.value;
+
+
+            // var ctext = document.createTextNode("");
+            // small.appendChild(ctext);
+            document.getElementById("ad").appendChild(small);
+
+
+
+
+            // var cb = document.getElementById("cbt");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        function selfun() {
+
+            var checkbt = document.getElementById("bt" + ids);
+            var checkinp = document.getElementById("checkin" + ids);
+            var checklab = document.getElementById("checklab" + ids);
+
+
+            checklab.innerHTML = checkinp.value;
+            checkinp.style.display = "none";
+            checkbt.style.display = "none";
+
+
+
+
+            var checkl = document.createElement("input");
+            checkl.setAttribute("class", "adder");
+            checkl.setAttribute("id", "checkl" + ids);
+            document.getElementById('ad').appendChild(checkl);
+
+
+            var cbt = document.createElement("input");
+
+            cbt.setAttribute("type", "button");
+
+            cbt.setAttribute("value", "Add");
+            cbt.setAttribute("class", "tushar");
+            cbt.setAttribute("onclick", "selfun1()");
+            cbt.setAttribute("id", "cbt" + ids);
+            document.getElementById('ad').appendChild(cbt);
+        }
+
+        function selfun1() {
+
+            var brr = document.createElement("br");
+            document.getElementById('ad').appendChild(brr);
+
+
+            var clab = document.getElementById("checkid");
+            var cinput = document.getElementById("checkl" + ids);
+
+            var options = document.createElement("option");
+            options.innerHTML = cinput.value;
+
+
+
+            document.getElementById("selctop" + ids).appendChild(options);
+
+
+        }
+
+        function submitvalue() {
+            idd++;
+
+
+            console.log(idd);
+            var arr = [];
+            var labearr = [];
+            var chearr = [];
+            var lab = [];
+
+            var inputx = document.querySelectorAll(".nsty");
+            for (i = 0; i < inputx.length; i++) {
+                labearr.push(inputx[i].innerHTML);
+
+
+            }
+            console.log(labearr)
+
+
+
+            var input = document.querySelectorAll(".input");
+            for (i = 0; i < input.length; i++) {
+
+
+
+                arr.push(input[i].value);
+
+
+            }
+
+            var e = document.querySelectorAll(".radio");
+            for (var i = 0; i < e.length; i++) {
+                if (e[i].type = "radio") {
+                    if (e[i].checked) {
+                        arr.push(e[i].value);
+                    }
+                }
+            }
+
+
+
+            var f = document.querySelectorAll(".selctop");
+            for (var i = 0; i < f.length; i++) {
+                arr.push(f[i].value)
+            }
+            console.log("arr" + arr);
+
+
+
+
+            var cval = document.querySelectorAll(".checkb");
+            console.log(cval)
+            for (var i = 0; i < cval.length; i++) {
+                if (cval[i].type = "checkbox") {
+
+                    if (cval[i].checked) {
+                        chearr.push(cval[i].value)
+                    }
+                }
+            }
+            for (i = 0; i < arr.length; i++) {
+
+
+                document.getElementById("data").innerHTML += labearr[i] + "  :  " + arr[i] + "<br>" + "<br>";
+
+            }
+
+            var inp = document.querySelectorAll(".nsty1");
+
+            for (var i = 0; i < inp.length; i++) {
+                {
+
+                    lab.push(inp[i].innerHTML);
+                }
+
+            }
+            console.log(lab);
+
+            for (i = 0; i < chearr.length; i++) {
+
+
+                document.getElementById("dat").innerHTML = lab + "  :  " + chearr + "<br>" + "<br>";
+
+            }
+
+
+
+
+
+
+
+            // var cg =document.getElementsByClassName("nsty");
+            // console.log(cg);
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function sel() {
+
+            ids++;
+
+            var input = document.getElementById("val").value;
+            if (input == "input") {
+
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty");
+                newlab.setAttribute("id", "lab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+
+
+
+
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "ibn" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "labfun()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+
+                var x = document.createElement("input");
+                x.setAttribute("type", "text");
+                x.setAttribute("class", "input");
+                x.setAttribute("id", "inpid" + ids);
+                x.setAttribute("placeholder", "text");
+                x.setAttribute("name", "name");
+
+                document.getElementById('ad').appendChild(x);
+
+
+            }
+            else if (input == "email") {
+
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty");
+                newlab.setAttribute("id", "emailab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "email" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "labfun1()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+
+
+
+
+                var x = document.createElement("input");
+                x.setAttribute("class", "input");
+                x.setAttribute("type", "email");
+                x.setAttribute("id", "email" + ids);
+                x.setAttribute("placeholder", "Enter Email");
+                x.setAttribute("name", "name");
+                console.log(x);
+                document.getElementById('ad').appendChild(x);
+
+
+            }
+
+            else if (input == "button") {
+
+                var x = document.createElement("input");
+                x.setAttribute("type", "button");
+                x.setAttribute("class", "bt");
+                x.setAttribute("value", "Submit");
+                x.setAttribute("onclick", "submitvalue()");
+                console.log(x);
+                document.getElementById('ad').appendChild(x);
+
+
+
+            }
+            else if (input == "number") {
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty");
+                newlab.setAttribute("id", "numlab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "num" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "labfun2()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+
+
+
+
+                var x = document.createElement("input");
+                x.setAttribute("type", "number");
+                x.setAttribute("id", "number" + ids);
+                x.setAttribute("class", "input");
+                x.setAttribute("placeholder", "number");
+                console.log(x);
+                document.getElementById('ad').appendChild(x);
+
+
+
+            }
+
+            else if (input == "radio") {
+
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty");
+                newlab.setAttribute("id", "checklab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "checkin" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "radio()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+                var abt = document.createElement("input");
+
+                abt.setAttribute("type", "button");
+                abt.setAttribute("onclick", "labfun6()");
+                abt.setAttribute("value", "Done");
+                abt.setAttribute("class", "tushar");
+                abt.setAttribute("id", "abt" + ids);
+                document.getElementById('ad').appendChild(abt);
+
+                // var x = document.createElement("input");
+                // x.setAttribute("type", "radio");
+                // x.setAttribute("class", "siz");
+                // x.setAttribute("name", "name");
+                // console.log(x);
+                // document.getElementById('ad').appendChild(x);
+
+
+            }
+            else if (input == "checkbox") {
+
+
+
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty1");
+                newlab.setAttribute("id", "checklab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "checkin" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "labfun3()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+                var abt = document.createElement("input");
+
+                abt.setAttribute("type", "button");
+                abt.setAttribute("onclick", "labfun6()");
+                abt.setAttribute("value", "Done");
+                abt.setAttribute("class", "tushar");
+                abt.setAttribute("id", "abt" + ids);
+                document.getElementById('ad').appendChild(abt);
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+            else if (input == "select") {
+
+                var newlab = document.createElement("label");
+                newlab.setAttribute("class", "nsty");
+                newlab.setAttribute("id", "checklab" + ids);
+
+                var textn = document.createTextNode("");
+                newlab.appendChild(textn);
+                document.getElementById("ad").appendChild(newlab);
+
+                var labs = document.createElement("input");
+                labs.setAttribute("class", "adder");
+                labs.setAttribute("id", "checkin" + ids);
+                document.getElementById('ad').appendChild(labs);
+
+
+
+                var bt = document.createElement("input");
+
+                bt.setAttribute("type", "button");
+                bt.setAttribute("onclick", "selfun()");
+                bt.setAttribute("value", "Add");
+                bt.setAttribute("class", "tushar");
+                bt.setAttribute("id", "bt" + ids);
+                document.getElementById('ad').appendChild(bt);
+
+
+                var abt = document.createElement("input");
+
+                abt.setAttribute("type", "button");
+                abt.setAttribute("onclick", "labfun6()");
+                abt.setAttribute("value", "Done");
+                abt.setAttribute("class", "tushar");
+                abt.setAttribute("id", "abt" + ids);
+                document.getElementById('ad').appendChild(abt);
+
+
+
+
+                var selecop = document.createElement("select");
+                selecop.setAttribute("class", "selctop");
+                selecop.setAttribute("id", "selctop" + ids);
+                document.getElementById("ad").appendChild(selecop);
+
+
+
+            }
+
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
